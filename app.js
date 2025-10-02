@@ -27,6 +27,10 @@ app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
 
 app.use(attachUser)
+app.get('/',(req,res)=>{
+    res.send("Welcome to Backend of Url Shortner ");
+    
+})
 
 app.use("/api/user",user_routes)
 app.use("/api/auth",auth_routes)
