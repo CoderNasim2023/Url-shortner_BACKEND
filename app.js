@@ -28,7 +28,7 @@ app.use(cookieParser())
 
 app.use(attachUser)
 app.get('/',(req,res)=>{
-    res.send("Welcome to Backend of Url Shortner ");
+    res.send("Welcome to Backend of Url Shortener ");
     
 })
 
